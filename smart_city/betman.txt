@@ -1,0 +1,90 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Experimente a nova plataforma cruzada PowerShell https://aka.ms/pscore6
+
+(.venv) PS C:\Users\FIC\Documents\Smart_City\Smart_City> pip freeze
+(.venv) PS C:\Users\FIC\Documents\Smart_City\Smart_City> pip install django
+Collecting django
+  Downloading Django-5.0.6-py3-none-any.whl.metadata (4.1 kB)
+Collecting asgiref<4,>=3.7.0 (from django)
+Collecting sqlparse>=0.3.1 (from django)
+  Using cached sqlparse-0.5.0-py3-none-any.whl.metadata (3.9 kB)
+Collecting tzdata (from django)
+  Using cached tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading Django-5.0.6-py3-none-any.whl (8.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.2/8.2 MB 14.9 MB/s eta 0:00:00
+Using cached asgiref-3.8.1-py3-none-any.whl (23 kB)
+Using cached sqlparse-0.5.0-py3-none-any.whl (43 kB)
+Using cached tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Collecting djangorestframework
+  Using cached djangorestframework-3.15.1-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: django>=3.0 in c:\users\fic\documents\smart_city\smart_city\.venv\lib\site-packages (from djangorestframework) (5.0.6)
+Requirement already satisfied: asgiref<4,>=3.7.0 in c:\users\fic\documents\smart_city\smart_city\.venv\lib\site-packages (from django>=3.0->djangorestframework) (3.8.1)
+Requirement already satisfied: sqlparse>=0.3.1 in c:\users\fic\documents\smart_city\smart_city\.venv\lib\site-packages (from django>=3.0->djangorestframework) (0.5.0)
+Requirement already satisfied: tzdata in c:\users\fic\documents\smart_city\smart_city\.venv\lib\site-packages (from django>=3.0->djangorestframework) (2024.1)
+Using cached djangorestframework-3.15.1-py3-none-any.whl (1.1 MB)
+Installing collected packages: djangorestframework
+Successfully installed djangorestframework-3.15.1
+(.venv) PS C:\Users\FIC\Documents\Smart_City\Smart_City> django-admin startproject smart_city
+(.venv) PS C:\Users\FIC\Documents\Smart_City\Smart_City> cd .\smart_city\
+
+    Diretório: C:\Users\FIC\Documents\Smart_City\Smart_City\smart_city
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/05/2024     08:33                smart_city
+-a----        10/05/2024     08:33            688 manage.py
+
+
+(.venv) PS C:\Users\FIC\Documents\Smart_City\Smart_City\smart_city> python manage.py startapp app_smart
+(.venv) PS C:\Users\FIC\Documents\Smart_City\Smart_City\smart_city> dir
+
+    Diretório: C:\Users\FIC\Documents\Smart_City\Smart_City\smart_city
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/05/2024     08:34                app_smart
+d-----        10/05/2024     08:35                smart_city
+-a----        10/05/2024     08:33            688 manage.py
+
+
+(.venv) PS C:\Users\FIC\Documents\Smart_City\Smart_City\smart_city> python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+(.venv) PS C:\Users\FIC\Documents\Smart_City\Smart_City\smart_city> python manage.py createsuperuser
+Username (leave blank to use 'fic'): smart_user
+Email address:
+Password:
+Password (again):
+This password is too short. It must contain at least 8 characters.
+This password is too common.
+This password is entirely numeric.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+(.venv) PS C:\Users\FIC\Documents\Smart_City\Smart_City\smart_city> 
+
+superuser = smart_user
+senha = 123456
+Igor_bedon
+#Bedon123

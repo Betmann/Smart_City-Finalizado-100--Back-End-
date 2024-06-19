@@ -1,0 +1,10 @@
+BACK-END
+
+SMART-CITY 
+CD SMART_CITY
+PYTHON MANAGE.PY RUNSERVER
+NÃO VAI ESQUECER BETMAN KKKK
+
+
+DELETE FROM sqlite_sequence WHERE name = 'app_smart_sensor';
+DELETE FROM app_smart_sensor WHERE id > 0;
